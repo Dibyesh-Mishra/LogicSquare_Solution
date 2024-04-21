@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joy's Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-banner-container">
+       
+        <h1 class="lato-bold ">Welcome to Joy's Cafe</h1>
+        <p class="lato-regular">Discover amazing shops everyday.</p>
+      </div>
+      <div class="search-container">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" placeholder="Search..." id="searchInput" />
+      </div>
+      <div class="table-container  lato-regular">
+        <table id="cafeTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Street No</th>
+                    <th>Locality</th>
+                    <th>Go To Map</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table body content will be dynamically generated -->
+            </tbody>
+        </table>
+        <div id="noCafeMessage" style="display: none;">No Cafe Found</div>
+        <div id="pagination"></div>
+    </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
